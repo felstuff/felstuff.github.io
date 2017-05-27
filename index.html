@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Walkthrough</title>
+
+    <!-- default bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- try themes from: https://startbootstrap.com/-->
+    <!-- <link rel="stylesheet" type="text/css" href="theme.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="theme2.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="theme3.css"> -->
+    <!--<link rel="stylesheet" type="text/css" href="theme4.css">-->
+
+    <!-- font awesome -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- animate.css -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css">
+
+    <!--to link to CSS-->
+    <link rel="stylesheet" href="custom.css">
+
+
+    <!-- use this style for testing and development purposes -->
+    <style type="text/css">
+        .container {
+            border: 2px dotted green;
+        }
+
+        .row {
+            border: 1px dotted red;
+        }
+
+        .row [class*=' col-'] {
+            border: 2px dotted purple;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--start of Nag bar-->
+
+    <!-- to disable sticking bar to screen, remove class: navbar-fixed-top -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!-- hamburger button. do not touch! -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                <!-- HOME BUTTON: REPLACE href="#" with your landing page url -->
+                <a class="navbar-brand" href="#">
+                    <!-- PUT BRAND LOGO / ICON HERE (instead of font-awesome -->
+                    <i class="fa fa-telegram"></i>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <!-- THIS UL HANDLES OUR LINKS -->
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="http://facebook.com">facebook</a></li>
+                    <li><a href="http://facebook.com">facebook2</a></li>
+                    <!-- to make more links, make some <li> in here -->
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="http://facebook.com">facebook</a></li>
+                    <li><a href="http://facebook.com">facebook2</a></li>
+                    <!-- to make more links, make some <li> in here -->
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!--enf od ng bar-->
+
+    <!--Main container for entire page-->
+    <div class="container" style="margin-top: 50px">
+
+        <!--roe1:jumbotron-->
+        <div class="row">
+
+            <!--full width col for all devices-->
+            <div class="col-xs-12
+            col-sm-12 
+            col-md-12 
+            col-lg-12">
+            </div>
+            <!--closing tag for col-->
+
+            <!--jumbotron code-->
+            <div class="jumbotron my-jumbotron-background">
+                <h1>Hello, world!</h1>
+                <p>
+                </p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae cum nihil, laborum sint at, alias sapiente
+                eaque repellendus fugiat, laudantium, sequi maiores eveniet ea officiis. Officia quam, minus architecto quas.
+                <p>
+                    <a class="btn btn-danger btn-lg" href="#" role="button">Learn more
+  </a>
+                </p>
+            </div>
+            <!--closing tag for jumbotron-->
+
+        </div>
+        <!--closing tag for row-->
+
+        <div class="row">
+
+            <!--col 1: first thumbnail-->
+            <div class="col-xs-12 
+            col-sm-4 
+            col-md-4 
+            col-lg-4">
+                TEST 1
+
+                <div class="thumbnail">
+                    <img src="http://placehold.it/350x150" alt="...">
+                    <div class="caption">
+                        <h3>Thumbnail label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid sunt alias repudiandae et, vel
+                            at odio quidem nihil dolores voluptatum deleniti ex tempora sequi, dolor laboriosam, itaque quasi
+                            temporibus voluptates!</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Button</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--col 2: second thumbnail-->
+
+            <div class="col-xs-12 
+            col-sm-4 
+            col-md-4 
+            col-lg-4">
+
+
+                <div class="thumbnail">
+                    <img src="http://placehold.it/350x150" alt="...">
+                    <div class="caption">
+                        <h3>Thumbnail label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque doloribus excepturi modi nisi qui
+                            esse beatae recusandae, natus. Cupiditate quam tempore, nam suscipit totam quo quas velit, delectus
+                            optio nulla!</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Button</a>
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+            <!--col 3: third thumbnail-->
+            <div class="col-xs-12 
+            col-sm-4 
+            col-md-4 
+            col-lg-4">
+                TEST 3
+
+                <div class="thumbnail">
+                    <img src="http://placehold.it/350x150" alt="...">
+                    <div class="caption">
+                        <h3>Thumbnail label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid sunt alias repudiandae et, vel
+                            at odio quidem nihil dolores voluptatum deleniti ex tempora sequi, dolor laboriosam, itaque quasi
+                            temporibus voluptates!</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Button</a>
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <!--closing tag for row2-->
+
+        <!--Row 3 for video-->
+        <div class="row">
+
+            <!--opening for col for all sizes-->
+
+            <div class="col-xs-12
+            col-sm-12 
+            col-md-12 
+            col-lg-12">
+
+                <!--responsive video embed-responsive-->
+
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/mWcbs12Z-ZA?autoplay=1&loop=1&playlist=v=mWcbs12Z-ZA&start30&end60"></iframe>
+                </div>
+
+            </div>
+            <!--closing for col-->
+
+        </div>
+
+        <!--Row 4 for form & generic text-->
+        <div class="row">
+
+            <!--left col-->
+            <div class="col-xs-12
+            col-sm-6
+            col-md-6
+            col-lg-6">
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <form action="https://coderinyou-1332.appspot.com/submit/" method="post">
+                            <div class="form-group">
+                                <label for="username-id"> Name</label>
+                                <input id="username-id" class="form-control" type="text" name="USERNAME" placeholder="Hi what's your name">
+                            </div>
+
+
+                            <div class="form-group">
+                                <label for="email-id"> Email</label>
+                                <input id="email-id" class="form-control" type="email" name="EMAIL" placeholder="Email Addy Here">
+
+                            </div>
+
+
+                            <div class="radio">
+                                <label> 
+    <input type="radio"
+           name="GENDER"
+            value="male"> male
+</label>
+                            </div>
+
+                            <div class="radio">
+                                <label> 
+    <input type="radio"
+           name="GENDER"
+            value="female"> female
+</label>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="submit" class="form-control">
+                            </div>
+
+                    </div>
+
+                </div>
+                <!--panel closing tag-->
+
+
+
+            </div>
+            <!--End of left col-->
+
+            <!--Right col-->
+            <div class="col-xs-12
+            col-sm-6
+            col-md-6
+            col-lg-6
+            text-center">
+
+
+
+                <h2 class "text-primary" "text-centre"> header text
+                </h2> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h2>
+
+                <p class="my-paragraph"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, voluptas, tempore. Tempora, illum similique,
+                    cum sapiente, ducimus maxime perspiciatis deleniti facilis voluptatem dignissimos ex vel molestiae temporibus,
+                    commodi. Ea, laborum.</p>
+
+            </div>
+            <!--end of right col-->
+
+        </div>
+        <!--End of row 4-->
+        test2
+        <!--Start of row 5: contact details-->
+        <div class="row">
+
+            <!--emmet shortcut: .col-xs-12.col-sm-4.col-md-4.col-lg-4*3-->
+
+            <!--<col 1 - table-->
+
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+
+                <table class="table table-hover">
+                    <tr class="info">
+                        <tr>
+                            <th>Opening Hour</td>
+                                <th>Time</th>
+                        </tr>
+                        <tr>
+                            <td>Mon to Sat</td>
+                            <td>0900 - 2300</td>
+                        </tr>
+                        <tr>
+                            <td>Sun</td>
+                            <td>0900 - 1600</td>
+                        </tr>
+                        <tr>
+                            <td>PH</td>
+                            <td>Close</td>
+                        </tr>
+                </table>
+
+            </div>
+            <!--end of col - table-->
+
+            <!--start of col-map-->
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+
+                <div class="embed-responsive embed-responsive-4by3">
+                    <iframe src="https://goo.gl/PFbXLt" class="responsive-embed"></iframe>
+                </div>
+
+            </div>
+            <!--end of col-map-->
+
+            <!--Start of Contact Details-->
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+
+                <div class="list-group">
+                    <a class="list-group-item" href="#"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp;</a>
+                    <a class="list-group-item" href="#"><i class="fa fa-book fa-fw" aria-hidden="true"></i>&nbsp; Library</a>
+                    <a class="list-group-item" href="#"><i class="fa fa-pencil fa-fw" aria-hidden="true"></i>&nbsp; Applications</a>
+                    <a class="list-group-item" href="#"><i class="fa fa-cog fa-fw" aria-hidden="true"></i>&nbsp; Settings</a>
+                </div>
+
+
+            </div>
+            <!--End of Contact Details-->
+
+        </div>
+        <!--end of row 5-->
+
+        <!--start of row 6: social media icons-->
+        <div Class="row">
+
+            <ul class="list-inline text-center">
+                <li>
+                    <a href="http://facebook.com" target="blank">
+                    <i class="fa fa-facebook fa-3x"></i>
+                        </a>
+                </li>
+
+                <li>
+                    <a href="http://instagram.com" target="blank">
+                    <i class="fa fa-instagram fa-3x"></i>
+                        </a>
+                </li>
+
+                <li><a href="http://twitter.com" target="blank">
+                    <i class="fa fa-twitter fa-3x"></i>
+                        </a> </li>
+            </ul>
+
+        </div>
+        <!--end of row 6: social media icons-->
+
+
+
+
+
+    </div>
+    <!--closing tag for main container-->
+
+
+
+
+    <!-- jquery -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/wow/1.1.2/wow.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
